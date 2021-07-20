@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Cifra no Cifra Club",
+  "version": "1.0",
+
+  "description": "Exibe automaticamente a cifra de uma música em execução no YouTube Music",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.music.youtube.com/*"],
+      "js": ["cifraclub.js"]
+    }
+  ],
+
+  "permissions": ["*://*.cifraclub.com.br/*"]
+}
